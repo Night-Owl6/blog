@@ -1,6 +1,6 @@
 baseURL = 'https://bytejournery.vercel.app/'
 languageCode = 'en-us'
-title = 'My Hugo Blog'
+title = 'My Blog'
 theme = 'PaperMod'
 
 [params]
