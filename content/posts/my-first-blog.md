@@ -2,6 +2,7 @@
 date = '2025-04-20T10:00:00-07:00'
 draft = false
 title = 'Why I Love Open Source'
+comments = true
 tags = ["opensource", "community", "development"]
 +++
 
