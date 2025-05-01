@@ -5,11 +5,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>404 Page not found | My Blog</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
+<title>Daily Log - 2025-05-01 | My Blog</title>
+<meta name="keywords" content="log, daily work">
+<meta name="description" content="🛠 Summary
+CIM experienced downtime this morning due to conflicting Python processes caused by overlapping manual and automatic startup scripts.
+
+📅 Timeline
+
+9:00 AM – 9:12 AM: Initial CIM downtime noticed.
+9:12 AM – 9:30 AM: Repeated crashing and restarting occurred.
+9:30 AM onwards: Identified and resolved issue.
+
+
+🔍 Root Cause
+After Josh restarted the VM, both the auto-start script (with a 60-second delay) and a manual startup were triggered. This led to two Python processes (running Waitress) trying to bind to the same port (8001), causing the server to crash intermittently.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/404.html">
+<link rel="canonical" href="http://localhost:1313/daily-logs/2025-05-01/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,7 +29,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/404.html">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/daily-logs/2025-05-01/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,7 +69,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -117,7 +128,63 @@
     </nav>
 </header>
 <main class="main">
-<div class="not-found">404</div>
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Daily Log - 2025-05-01
+    </h1>
+    <div class="post-meta"><span title='2025-05-01 15:50:57 -0700 MST'>May 1, 2025</span>&nbsp;·&nbsp;1 min
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="-summary">🛠 Summary<a hidden class="anchor" aria-hidden="true" href="#-summary">#</a></h2>
+<p>CIM experienced downtime this morning due to conflicting Python processes caused by overlapping manual and automatic startup scripts.</p>
+<hr>
+<h2 id="-timeline">📅 Timeline<a hidden class="anchor" aria-hidden="true" href="#-timeline">#</a></h2>
+<ul>
+<li><strong>9:00 AM – 9:12 AM</strong>: Initial CIM downtime noticed.</li>
+<li><strong>9:12 AM – 9:30 AM</strong>: Repeated crashing and restarting occurred.</li>
+<li><strong>9:30 AM onwards</strong>: Identified and resolved issue.</li>
+</ul>
+<hr>
+<h2 id="-root-cause">🔍 Root Cause<a hidden class="anchor" aria-hidden="true" href="#-root-cause">#</a></h2>
+<p>After Josh restarted the VM, both the <strong>auto-start script</strong> (with a 60-second delay) and a <strong>manual startup</strong> were triggered. This led to <strong>two Python processes</strong> (running Waitress) trying to bind to the same port (<code>8001</code>), causing the server to crash intermittently.</p>
+<hr>
+<h2 id="-debugging-steps">🧪 Debugging Steps<a hidden class="anchor" aria-hidden="true" href="#-debugging-steps">#</a></h2>
+<ol>
+<li><strong>Checked Nginx Logs</strong>: Found 443 access forbidden, but config looked fine.</li>
+<li><strong>Verified Redis</strong>: Redis was running without issues.</li>
+<li><strong>Tried Localhost Access</strong>: <code>http://localhost:8001</code> failed to load → pointed to Waitress issue.</li>
+<li><strong>Ran <code>netstat</code> on port 8001</strong>: Discovered <strong>two active <code>python.exe</code></strong> processes.</li>
+<li><strong>Killed Both Processes</strong>.</li>
+<li><strong>Restarted Services</strong>: Successfully restored CIM with a single instance.</li>
+</ol>
+<hr>
+<h2 id="-additional-notes">⚠️ Additional Notes<a hidden class="anchor" aria-hidden="true" href="#-additional-notes">#</a></h2>
+<ul>
+<li><strong>April 2025 Windows Update</strong> changed some services from <strong>manual to auto-start</strong>, including some that <strong>reserve port 443</strong>.</li>
+<li>We had previously disabled these, but we will <strong>verify our changes again at 5:30 PM</strong> to ensure they hold across reboots.</li>
+</ul>
+<hr>
+<h2 id="-action-items">✅ Action Items<a hidden class="anchor" aria-hidden="true" href="#-action-items">#</a></h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Kill conflicting processes and restart CIM.</li>
+<li><input checked="" disabled="" type="checkbox"> Verify Nginx and Redis status.</li>
+<li><input disabled="" type="checkbox"> Confirm Windows service changes persist at 5:30 PM test.</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/log/">Log</a></li>
+      <li><a href="http://localhost:1313/tags/daily-work/">Daily Work</a></li>
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">

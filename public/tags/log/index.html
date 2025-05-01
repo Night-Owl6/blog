@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>404 Page not found | My Blog</title>
+<title>Log | My Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/404.html">
+<link rel="canonical" href="http://localhost:1313/tags/log/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,7 +18,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/404.html">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/log/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/log/">
 <noscript>
     <style>
         #theme-toggle,
@@ -116,8 +117,26 @@
         </ul>
     </nav>
 </header>
-<main class="main">
-<div class="not-found">404</div>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Log
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Daily Log - 2025-05-01
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🛠 Summary CIM experienced downtime this morning due to conflicting Python processes caused by overlapping manual and automatic startup scripts.
+📅 Timeline 9:00 AM – 9:12 AM: Initial CIM downtime noticed. 9:12 AM – 9:30 AM: Repeated crashing and restarting occurred. 9:30 AM onwards: Identified and resolved issue. 🔍 Root Cause After Josh restarted the VM, both the auto-start script (with a 60-second delay) and a manual startup were triggered. This led to two Python processes (running Waitress) trying to bind to the same port (8001), causing the server to crash intermittently.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-01 15:50:57 -0700 MST'>May 1, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Daily Log - 2025-05-01" href="http://localhost:1313/daily-logs/2025-05-01/"></a>
+</article>
     </main>
     
 <footer class="footer">

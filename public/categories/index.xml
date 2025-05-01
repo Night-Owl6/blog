@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Categories on My Hugo Blog</title>
+    <title>Categories on My Blog</title>
     <link>http://localhost:1313/categories/</link>
-    <description>Recent content in Categories on My Hugo Blog</description>
+    <description>Recent content in Categories on My Blog</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 01 May 2025 15:50:57 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily-Logs</title>
+      <link>http://localhost:1313/categories/daily-logs/</link>
+      <pubDate>Thu, 01 May 2025 15:50:57 -0700</pubDate>
+      <guid>http://localhost:1313/categories/daily-logs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorials</title>
+      <link>http://localhost:1313/categories/tutorials/</link>
+      <pubDate>Thu, 01 May 2025 15:36:10 -0700</pubDate>
+      <guid>http://localhost:1313/categories/tutorials/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

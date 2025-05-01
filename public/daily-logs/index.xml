@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My Blog</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on My Blog</description>
+    <title>Daily-Logs on My Blog</title>
+    <link>http://localhost:1313/daily-logs/</link>
+    <description>Recent content in Daily-Logs on My Blog</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 May 2025 15:50:57 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/daily-logs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Log - 2025-05-01</title>
       <link>http://localhost:1313/daily-logs/2025-05-01/</link>
@@ -25,33 +25,6 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;-root-cause&#34;&gt;🔍 Root Cause&lt;/h2&gt;
 &lt;p&gt;After Josh restarted the VM, both the &lt;strong&gt;auto-start script&lt;/strong&gt; (with a 60-second delay) and a &lt;strong&gt;manual startup&lt;/strong&gt; were triggered. This led to &lt;strong&gt;two Python processes&lt;/strong&gt; (running Waitress) trying to bind to the same port (&lt;code&gt;8001&lt;/code&gt;), causing the server to crash intermittently.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to use Hugo</title>
-      <link>http://localhost:1313/posts/hugo-tutorial-page/</link>
-      <pubDate>Thu, 01 May 2025 15:36:10 -0700</pubDate>
-      <guid>http://localhost:1313/posts/hugo-tutorial-page/</guid>
-      <description>This is how you use Hugo to write a new post!
-## Step 1: Install Hugo
-You can install Hugo by following the instructions on the [Hugo installation page](https://gohugo.io/getting-started/installing/).
-## Step 2: Create a new site
-You can create a new Hugo site by running the following command in your terminal:
-```bash
-hugo new site my-hugo-site
-```</description>
-    </item>
-    <item>
-      <title>Why I Love Open Source</title>
-      <link>http://localhost:1313/posts/my-first-blog/</link>
-      <pubDate>Sun, 20 Apr 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/my-first-blog/</guid>
-      <description>&lt;p&gt;Open source is not just about code. It’s about community, contribution, and collaboration.&lt;/p&gt;
-&lt;p&gt;Here are some reasons I love open source:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You learn fast&lt;/li&gt;
-&lt;li&gt;You give back to the world&lt;/li&gt;
-&lt;li&gt;You build real-world projects&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

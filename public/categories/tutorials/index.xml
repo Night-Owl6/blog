@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on My Blog</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on My Blog</description>
+    <title>Tutorials on My Blog</title>
+    <link>http://localhost:1313/categories/tutorials/</link>
+    <description>Recent content in Tutorials on My Blog</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 May 2025 15:36:10 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to use Hugo</title>
       <link>http://localhost:1313/posts/hugo-tutorial-page/</link>
@@ -21,19 +21,6 @@ You can create a new Hugo site by running the following command in your terminal
 ```bash
 hugo new site my-hugo-site
 ```</description>
-    </item>
-    <item>
-      <title>Why I Love Open Source</title>
-      <link>http://localhost:1313/posts/my-first-blog/</link>
-      <pubDate>Sun, 20 Apr 2025 10:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/my-first-blog/</guid>
-      <description>&lt;p&gt;Open source is not just about code. It’s about community, contribution, and collaboration.&lt;/p&gt;
-&lt;p&gt;Here are some reasons I love open source:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You learn fast&lt;/li&gt;
-&lt;li&gt;You give back to the world&lt;/li&gt;
-&lt;li&gt;You build real-world projects&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

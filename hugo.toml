@@ -16,3 +16,8 @@ theme = 'PaperMod'
     name = "Posts"
     url = "/posts"
     weight = 2
+
+  [[menu.main]]
+    name = "Daily Logs"
+    url = "/daily-logs/"
+    weight = 3
